@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --pixel-font: 'Press Start 2P', cursive;
+  --bg-color: #2c2c2c;
+  --text-color: #f0f0f0;
+  --neon-green: #39ff14;
+  --neon-pink: #ff00ff;
+  --pixel-border: 4px solid #000;
+  --pixel-shadow: 4px 4px 0px 0px #000;
+}
+
+body {
+  margin: 0;
+  font-family: var(--pixel-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: none;
+  background-image: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: var(--pixel-font);
+  background-color: #fff;
+  border: var(--pixel-border);
+  box-shadow: var(--pixel-shadow);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000;
+}
+
+input {
+  font-family: var(--pixel-font);
+  padding: 10px;
+  border: var(--pixel-border);
+  outline: none;
+}
+
+.pixel-card {
+  background: #fff;
+  color: #000;
+  border: var(--pixel-border);
+  box-shadow: var(--pixel-shadow);
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.pixel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
